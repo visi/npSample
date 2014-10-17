@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+	<id>com.sogou.npapi.test</id>
+	<name>npapi测试</name>
+	<show_icon>true</show_icon>
+	<description>apapi测试</description>
+	<version>0.1</version>
+	<request_api_version>1</request_api_version>
+	<author>tienou</author>
+	<background page="background.html"></background>
+    <permissions>
+        <permission>alarms</permission>
+        <permission>blueTip</permission>
+        <permission>bookmarks</permission>
+        <permission>cookies</permission>
+        <permission>declarativeWebRequest</permission>
+        <permission>eWall</permission>
+        <permission>history</permission>
+        <permission>idle</permission>
+        <permission>management</permission>
+        <permission>notifications</permission>
+        <permission>proxy</permission>
+        <permission>prefetch</permission>
+        <permission>sidebarAction</permission>
+        <permission>storage</permission>
+        <permission>topSites</permission>
+        <permission>webNavigation</permission>
+        <permission>webRequest</permission>
+    </permissions>
+    <plugins>
+        <plugin name="npSample" path="npSample.dll">
+            <mime_type>application/plugin-sample</mime_type>
+        </plugin>
+    </plugins>
+</extension>
